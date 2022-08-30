@@ -16,9 +16,8 @@ const About = () => {
         <img src={Me} alt="" className="about__img" />
         <div className="about__data">
           <p className="about__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            quidem corporis a fuga quo. Vitae accusamus dolores nihil, minima a
-            mollitia necessitatibus, eum ipsa iure iusto, eius earum omnis modi!
+            I'm Ahmed, a Junior MERN stack Developer, and l can build
+            applications with frontend and backend operations.
           </p>
           <a download="" href={CV} className="btn button--flex">
             Download CV

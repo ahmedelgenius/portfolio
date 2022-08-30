@@ -1,5 +1,6 @@
 #about {
   text-align: center;
+  margin-top: -4.5rem;
 }
 .about__container {
   display: grid;
