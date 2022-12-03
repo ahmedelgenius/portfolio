@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header/header";
 import Nav from "./components/Nav/nav";
 import Experience from "./components/Experience/experience";
@@ -6,15 +6,10 @@ import Portfolio from "./components/Portfolio/portfolio";
 import Footer from "./components/Footer/footer";
 import About from "./components/About/about";
 import Contact from "./components/Contact/contact";
-import { useEffect } from "react";
-import PacmanLoader from "react-spinners/PacmanLoader";
-// const override = (CSSProperties = {
-// display: "flex",
-// justifyContent: "center",
-// alignItems: "center",
-// margin: "70px auto",
-// textAlign: "center",
-// });
+import HashLoader from "react-spinners/HashLoader";
+import CSSProperties from "react";
+import "./App.css";
+
 function App() {
   const [loading, setLoading] = useState(false);
 
@@ -22,23 +17,26 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 1000);
   }, []);
   return (
+    //6131df
     <div>
       {loading ? (
-        <PacmanLoader color={"#6131df"} loading={loading} size={110} />
+        <div className="App">
+          <HashLoader color={"#cc68e0"} loading={loading} size={200} />
+        </div>
       ) : (
-        <>
+        <div className="container">
           <Header />
           <Nav />
           <About />
           <Experience />
           <Portfolio />
           <Contact />
-          <Footer />
-        </>
+        </div>
       )}
+      <Footer />
     </div>
   );
 }

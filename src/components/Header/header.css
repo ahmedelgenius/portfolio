@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open Sans:wght@300;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #1f1f38;
   color: #fff;
   line-height: 1.7;
@@ -18,37 +18,45 @@ body {
 
 header {
   height: 100vh;
-  /* padding: 10rem; */
-  margin-top: 16rem;
-  margin-bottom: 0;
-  /* overflow: hidden; */
-
-  font-family: "Poppins", sans-serif;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+  /* margin-top: 16rem;
+  margin-bottom: 0; */
+  font-family: "Open Sans", sans-serif;
   background-color: #1f1f38;
+  /* background-color: rgb(88, 58, 179); */
   color: #fff;
   line-height: 1.7;
+  border-bottom: 1px solid #4b27a7;
+  padding-bottom: 50px;
 }
 
 /* profile */
 
-.profile-container {
+/* .profile-container {
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: center;
-  height: 10%;
-  min-height: fit-content;
-}
-
+  justify-content: center; */
+/* height: 100%; */
+/* min-height: fit-content; */
+/* } */
+/* 
 .profile-parent {
   display: flex;
   align-items: center;
-  color: aliceblue;
+  color: aliceblue; */
+/* } */
+.profile-details {
+  margin-top: 3.5rem;
 }
-
 .profile-details-name {
   font-size: 24px;
-  font-family: "Poppins SemiBold";
+  font-family: "Open Sans SemiBold";
 }
 .profile-details-role {
   display: flex;
@@ -56,12 +64,13 @@ header {
   margin: 14px 0 24px 0;
 }
 
-.profile-details-role h1 {
-  font-size: 40px;
+.profile-details-role h2 {
+  /* font-size: 40px; */
   font-family: cursive;
 }
-.primary-text {
+.primary-text h1 {
   color: #fff;
+  font-family: "Open Sans" !important;
 }
 .highlighted-text {
   color: #4db5ff;
@@ -70,7 +79,7 @@ header {
 .profile-role-tagline {
   font-size: 19px;
   margin: 5px 0 0 0;
-  font-family: "Poppins Light";
+  font-family: "Open Sans Light";
 }
 
 .profile-options .highlighted-btn {
@@ -78,7 +87,7 @@ header {
 }
 
 .profile-options .highlighted-btn:hover {
-  margin: 0 0 0 28px;
+  /* margin: 0 0 0 28px; */
   background-color: cornsilk !important;
   color: #6131df !important;
 }
@@ -89,9 +98,9 @@ header {
   justify-content: center;
   box-shadow: 0 1px 0px 0px #fff;
   border-radius: 50%;
-  height: 380px;
-  width: 380px;
-  margin: 0 0px 0 100px;
+  height: 350px;
+  width: 350px;
+  /* margin: 0 0px 0 100px; */
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -121,7 +130,7 @@ header {
   -o-transition: 1s ease-out;
 }
 
-.colz .colz-icon .icon {
+/* .colz .colz-icon .icon {
   color: #fff;
   padding: 8px;
   padding-left: 0px;
@@ -132,9 +141,9 @@ header {
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
-}
+} */
 
-@media screen and (max-width: 1110px) {
+/* @media screen and (max-width: 1110px) {
   .profile-picture {
     margin: 0 0px 0 80px;
   }
@@ -150,16 +159,16 @@ header {
 
     z-index: 700;
   }
-}
-@media screen and (max-width: 910px) {
+} */
+/* @media screen and (max-width: 910px) {
   .profile-picture {
     height: 320px;
     width: 320px;
     margin: 0 0 0 4px;
   }
-}
+} */
 
-@media screen and (max-width: 810px) {
+/* @media screen and (max-width: 810px) {
   .profile-picture {
     margin: 0 !important;
   }
@@ -172,9 +181,8 @@ header {
     display: flex;
     justify-content: space-between;
   }
-  /* .profile-options .highlighted-btn{
-    margin-left: 1rem;
-  } */
+
+
   .profile-details {
     margin: 25px 0 0;
   }
@@ -185,13 +193,13 @@ header {
   .profile-details-role {
     text-align: center;
   }
-}
+} */
 .highlighted-btn {
   background-color: #6131df !important;
   color: #fff !important;
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   .profile-picture {
     height: 275;
     width: 275;
@@ -200,4 +208,4 @@ header {
   .profile-details {
     width: 90%;
   }
-}
+} */
