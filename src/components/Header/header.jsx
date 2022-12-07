@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-import { TypeAnimation } from "react-type-animation";
+// import { TypeAnimation } from "react-type-animation";
 import CV from "../../assets/Ahmed_Hany_Resume.pdf";
 const Header = () => {
   return (
@@ -25,7 +25,8 @@ const Header = () => {
                 <div className="profile-details-role">
                   <span className="primary-text">
                     {" "}
-                    <h2>
+                    <h2>MERN Stack Developer</h2>
+                    {/* <h2>
                       <TypeAnimation
                         sequence={[
                           "Front End Developer", // Types 'One'
@@ -42,7 +43,7 @@ const Header = () => {
                         repeat={Infinity}
                         style={{ fontSize: "1em" }}
                       />
-                    </h2>
+                    </h2> */}
                     <span className="profile-role-tagline">
                       l can building applications with frontend and backend
                       operations
